@@ -6,7 +6,7 @@ function it(assertion, testFunction){
 function toEqual(test, expected){
   return function(){
     if (test !== expected){
-    throw new Error("'" + test + "'" + " should equal " + "'" + expected + "'" );
+    throw new Error("'" + expected + "'" + " should equal " + "'" + test + "'" );
     } else {
       console.log("test passed " + ":  '" + test + "'" + " is equal to " + "'" + expected + "'" );
     };
