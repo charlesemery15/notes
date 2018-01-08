@@ -1,13 +1,14 @@
-// var exclaim = require("./exclaim").exclaim;
 
-if (exclaim("hi") !== "hi!!!!!") {
-  throw new Error("Exclaiming hi should equal hi!!!!!");
+var note = new Note('test title', 'test message')
+
+if (note.title !== 'test title') {
+  throw new Error("note title shoule equal title");
 } else {
-  console.log("This test passed!");
+  console.log("Passed test!");
 }
 
-if (double('hi') !==  'hihi') {
-  throw new Error("Double hi should equal hihi")
+if (note.message !== 'test message') {
+  throw new Error('note message should equal message')
 } else {
-  console.log("Test passed")
+  console.log('Passed test!')
 };

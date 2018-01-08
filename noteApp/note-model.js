@@ -1,14 +1,9 @@
 (function(exports) {
-  var EXCLAMATION_MARK_COUNT = 5
 
-  function exclaim(string) {
-    return string + "!".repeat(EXCLAMATION_MARK_COUNT);
+  function Note(title, message) {
+    this.title = title
+    this.message = message
   };
 
-  function double(string) {
-    return string + string;
-  };
-  exports.double = double;
-
-  exports.exclaim = exclaim;
+  exports.Note = Note
 })(this);
