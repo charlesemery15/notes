@@ -7,4 +7,6 @@ notelist.addNote("TITLE", "this is the content of a message");
 
 it("Should be able to add a note to the notelist", toEqual(notelist.list[0].title, "TITLE"));
 it("Should be able to read contents of added note", toEqual(notelist.list[0].message, "this is the content of a message"));
-it("Should return all notes in noteList", toEqual(notelist.returnAllNotes, notelist.list, ));
+console.log(notelist.list)
+console.log(notelist.returnAllNotes())
+it("Should return all notes in noteList", toEqual(notelist.returnAllNotes(), notelist.list ));
