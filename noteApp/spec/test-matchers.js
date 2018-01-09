@@ -1,6 +1,6 @@
 function it(assertion, testFunction){
   console.log(assertion);
-  testFunction(); // THIS IS A VARIABLE NAME, NOT CALLING THE SPECIFIC FUNCTION
+  testFunction(); 
 }
 
 function toEqual(test, expected){

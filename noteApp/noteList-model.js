@@ -9,5 +9,7 @@
     this.list.push(note)
   }
 
+  NoteList.prototype.returnAllNotes
+
   exports.NoteList = NoteList
 })(this);
